@@ -1,6 +1,6 @@
 const translations = {
     ru: {
-        name: 'Кирилл',
+        name: 'Fenter',
         subtitle: 'Unity-разработчик, Blazor & React веб-приложения',
         aboutTitle: 'Обо мне',
         aboutText: 'Привет! Я Кирилл — разработчик игр на Unity и веб-приложений на Blazor и React. Люблю создавать яркие, современные и удобные продукты. Открыт к новым проектам и сотрудничеству!<br>Работаю с графикой и пиксельной анимацией.',
@@ -23,7 +23,7 @@ const translations = {
         footer: '&copy; 2025 Все права защищены.'
     },
     en: {
-        name: 'Kirill',
+        name: 'Fenter',
         subtitle: 'Unity Developer, Blazor & React Web Apps',
         aboutTitle: 'About Me',
         aboutText: "Hi! I'm Kirill — a developer of Unity games and web apps with Blazor and React. I love creating bright, modern and user-friendly products. Open to new projects and collaborations!<br>I work with graphics and pixel animation.",
