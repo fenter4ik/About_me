@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Кирилла</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="hero text-center">
+        <div class="d-flex justify-content-end align-items-center" style="position: absolute; right: 2rem; top: 2rem; z-index: 2;">
+            <button id="lang-ru" class="btn btn-light btn-sm me-2 fw-bold">RU</button>
+            <button id="lang-en" class="btn btn-outline-light btn-sm fw-bold">EN</button>
+        </div>
+        <img src="https://github.com/fenter4ik.png" alt="Аватар" class="avatar mb-3">
+        <h1 class="display-4 fw-bold mb-2" id="name">Кирилл</h1>
+        <p class="lead mb-3" id="subtitle">Unity-разработчик, Blazor & React веб-приложения</p>
+        <div class="d-flex justify-content-center gap-3 mb-2">
+            <a href="mailto:kirilldour@gmail.com" class="text-white fs-4" title="Email"><i class="bi bi-envelope-at-fill"></i></a>
+            <a href="https://github.com/fenter4ik" target="_blank" class="text-white fs-4" title="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://t.me/fenterkd" target="_blank" class="text-white fs-4" title="Telegram"><i class="bi bi-telegram"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <section class="mb-5">
+            <h2 class="mb-3 section-title"><i class="bi bi-person-vcard"></i> <span id="about-title">Обо мне</span></h2>
+            <p id="about-text">Привет! Я Кирилл — разработчик игр на Unity и веб-приложений на Blazor и React. Люблю создавать яркие, современные и удобные продукты. Открыт к новым проектам и сотрудничеству!<br>
+Работаю с графикой и пиксельной анимацией.</p>
+            <div class="skills mb-2" id="skills-list">
+                <span class="skill-badge"><i class="bi bi-unity"></i> Unity</span>
+                <span class="skill-badge"><i class="bi bi-code-slash"></i> C#</span>
+                <span class="skill-badge">
+                    <img src="photo/react-svgrepo-com.svg" alt="React" style="width:20px;height:20px;vertical-align:middle;filter:invert(41%) sepia(97%) saturate(749%) hue-rotate(235deg) brightness(97%) contrast(92%);margin-right:6px;">
+                    React
+                </span>
+                <span class="skill-badge"><i class="bi bi-database"></i> PostgreSQL</span>
+                <span class="skill-badge"><i class="bi bi-window"></i> Blazor</span>
+                <span class="skill-badge">
+                    <img src="photo/aseprite-svgrepo-com.svg" alt="Aseprite" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;filter:invert(41%) sepia(97%) saturate(749%) hue-rotate(235deg) brightness(97%) contrast(92%);">
+                    Aseprite
+                </span>
+                <span class="skill-badge">
+                    <img src="photo/adobe-illustrator-svgrepo-com.svg" alt="Illustrator" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;filter:invert(41%) sepia(97%) saturate(749%) hue-rotate(235deg) brightness(97%) contrast(92%);">
+                    Illustrator
+                </span>
+            </div>
+        </section>
+        <section class="mb-5 glass-gradient">
+            <h2 class="mb-3 section-title"><i class="bi bi-controller"></i> <span id="projects-title">Мои проекты</span></h2>
+            <div class="row g-4 mb-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-6 p-2">
+                                <img src="photo/just1.png" class="project-img w-100 mb-2" alt="Just Forward 1">
+                                <img src="photo/just2.png" class="project-img w-100" alt="Just Forward 2">
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="just-title">Just Forward</h5>
+                                    <p class="card-text small" id="just-desc">3D-рогалик с мультяшной графикой, где основной задачей игрока является движение вперёд через различные локации с сражением против врагов.<br>Проект написан на Unity C#.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-6 p-2">
+                                <img src="photo/kvettka1.png" class="project-img w-100 mb-2" alt="Kvettka 1">
+                                <img src="photo/kvettka2.png" class="project-img w-100" alt="Kvettka 2">
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="kvettka-title">Kvettka</h5>
+                                    <p class="card-text small" id="kvettka-desc">Редактор цветовых палитр для дизайнеров, художников и разработчиков.<br>Использован Blazor и PostgreSQL.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5 github-section">
+            <h2 class="section-title"><i class="bi bi-bar-chart-line"></i> <span id="github-title">GitHub статистика</span></h2>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
+                <img src="https://github-readme-stats.vercel.app/api?username=fenter4ik&show_icons=true&theme=default" alt="GitHub stats" style="max-width:100%;height:auto;">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=fenter4ik" alt="GitHub streak" style="max-width:100%;height:auto;">
+            </div>
+            <div class="text-center mt-4">
+                <img src="https://github-contributions-api.deno.dev/fenter4ik.svg" alt="GitHub contributions" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 2px 12px rgba(162,89,255,0.10);">
+                <div class="text-muted small mt-2" id="github-contrib">Contributions in the last year</div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-gradient text-white text-center py-3 mt-4" id="footer-text">
+        &copy; 2025 Все права защищены.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lang.js"></script>
+</body>
+</html>
